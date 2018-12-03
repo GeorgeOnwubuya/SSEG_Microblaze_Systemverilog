@@ -1,0 +1,21 @@
+/*****************************************************************//**
+ * @file sseg_core.h
+ *
+ * @brief Write 7-segment LED display.
+ *
+ * @author p chu
+ * @version v1.0: initial release
+ *********************************************************************/
+
+#ifndef _SSEG_CORE_H_INCLUDED
+#define _SSEG_CORE_H_INCLUDED
+
+#include "chu_init.h"
+
+//Function to write data to seven segment
+void write_data_sseg(uint32_t data);
+
+//Function set refresh rate
+void set_refresh_rate(uint16_t refresh_rate);
+
+#endif  // _SSEG_CORE_H_INCLUDED

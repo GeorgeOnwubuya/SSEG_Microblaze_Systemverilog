@@ -1,0 +1,2644 @@
+15:14:26 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+15:19:51 **** Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+15:23:47 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/adsr_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/adsr_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/adsr_core.d" -MT"src/adsr_core.o" -o "src/adsr_core.o" "../src/adsr_core.cpp"
+../src/adsr_core.cpp: In member function 'void AdsrCore::write_adsr_reg()':
+../src/adsr_core.cpp:130:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (ams == BYPASS_PATTERN) {
+        ~~~~^~~~~~~~~~~~~~~~~
+'Finished building: ../src/adsr_core.cpp'
+' '
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/ddfs_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ddfs_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ddfs_core.d" -MT"src/ddfs_core.o" -o "src/ddfs_core.o" "../src/ddfs_core.cpp"
+'Finished building: ../src/ddfs_core.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/ps2_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ps2_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ps2_core.d" -MT"src/ps2_core.o" -o "src/ps2_core.o" "../src/ps2_core.cpp"
+'Finished building: ../src/ps2_core.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/vga_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_core.d" -MT"src/vga_core.o" -o "src/vga_core.o" "../src/vga_core.cpp"
+'Finished building: ../src/vga_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2908	    276	   3128	   6312	   18a8	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+15:24:43 **** Clean-only build of configuration Debug for project SSEG_Switches_Display ****
+make clean 
+rm -rf  ./src/main.d  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o  ./src/adsr_core.d ./src/chu_init.d ./src/ddfs_core.d ./src/gpio_cores.d ./src/i2c_core.d ./src/ps2_core.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/vga_core.d ./src/xadc_core.d  SSEG_Switches_Display.elf.size  SSEG_Switches_Display.elf
+' '
+15:24:43 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/ddfs_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ddfs_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ddfs_core.d" -MT"src/ddfs_core.o" -o "src/ddfs_core.o" "../src/ddfs_core.cpp"
+'Finished building: ../src/ddfs_core.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/ps2_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ps2_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ps2_core.d" -MT"src/ps2_core.o" -o "src/ps2_core.o" "../src/ps2_core.cpp"
+'Finished building: ../src/ps2_core.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/vga_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_core.d" -MT"src/vga_core.o" -o "src/vga_core.o" "../src/vga_core.cpp"
+'Finished building: ../src/vga_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2908	    276	   3128	   6312	   18a8	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+15:25:23 **** Clean-only build of configuration Debug for project SSEG_Switches_Display ****
+make clean 
+rm -rf  ./src/main.d  ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o  ./src/chu_init.d ./src/ddfs_core.d ./src/gpio_cores.d ./src/i2c_core.d ./src/ps2_core.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/vga_core.d ./src/xadc_core.d  SSEG_Switches_Display.elf.size  SSEG_Switches_Display.elf
+' '
+15:25:23 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2908	    276	   3128	   6312	   18a8	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+15:25:43 **** Clean-only build of configuration Debug for project SSEG_Switches_Display ****
+make clean 
+rm -rf  ./src/main.d  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/i2c_core.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/xadc_core.d  SSEG_Switches_Display.elf.size  SSEG_Switches_Display.elf
+' '
+15:25:43 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [SSEG_Switches_Display.elf] Error 1
+15:26:45 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11372	    284	   3144	  14800	   39d0	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+15:26:03 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+15:28:47 **** Clean-only build of configuration Debug for project SSEG_Switches_Display ****
+make clean 
+rm -rf  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/i2c_core.d ./src/main_vanilla_test.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/xadc_core.d  SSEG_Switches_Display.elf.size  SSEG_Switches_Display.elf
+' '
+15:28:51 **** Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11372	    284	   3144	  14800	   39d0	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+15:37:34 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:12:1: error: expected initializer before 'SsegCore'
+ SsegCore::SsegCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+../src/sseg_core.cpp:21:1: error: 'SsegCore' does not name a type; did you mean 'UartCore'?
+ SsegCore::~SsegCore() {
+ ^~~~~~~~
+ UartCore
+../src/sseg_core.cpp:25:6: error: 'SsegCore' has not been declared
+ void SsegCore::write_led() {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_led()':
+../src/sseg_core.cpp:32:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[3 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:36:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:36:20: note: suggested alternative: 'p'
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:39:13: error: 'base_addr' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+             ^
+../src/chu_io_rw.h:45:29: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                             ^~~~~~~~~
+../src/sseg_core.cpp:39:24: error: 'DATA_LOW_REG' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp:42:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[7 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:46:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:46:20: note: suggested alternative: 'p'
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:49:24: error: 'DATA_HIGH_REG' was not declared in this scope
+    io_write(base_addr, DATA_HIGH_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:52:6: error: 'SsegCore' has not been declared
+ void SsegCore::write_8ptn(uint8_t *ptn_array) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_8ptn(uint8_t*)':
+../src/sseg_core.cpp:56:7: error: 'ptn_buf' was not declared in this scope
+       ptn_buf[i] = *ptn_array;
+       ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:62:6: error: 'SsegCore' has not been declared
+ void SsegCore::write_1ptn(uint8_t pattern, int pos) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_1ptn(uint8_t, int)':
+../src/sseg_core.cpp:63:4: error: 'ptn_buf' was not declared in this scope
+    ptn_buf[pos] = pattern;
+    ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:69:6: error: 'SsegCore' has not been declared
+ void SsegCore::set_dp(uint8_t pt) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void set_dp(uint8_t)':
+../src/sseg_core.cpp:70:4: error: 'dp' was not declared in this scope
+    dp = ~pt;     // active low
+    ^~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:75:9: error: 'SsegCore' has not been declared
+ uint8_t SsegCore::h2s(int hex) {
+         ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+15:43:21 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+In file included from ../src/sseg_core.cpp:10:0:
+../src/sseg_core.h:19:23: error: variable or field 'set_refresh_rate' declared void
+ void set_refresh_rate(unit16_t refresh_rate);
+                       ^~~~~~~~
+../src/sseg_core.h:19:23: error: 'unit16_t' was not declared in this scope
+../src/sseg_core.h:19:23: note: suggested alternative: 'uint16_t'
+ void set_refresh_rate(unit16_t refresh_rate);
+                       ^~~~~~~~
+                       uint16_t
+../src/sseg_core.cpp:12:1: error: 'SsegCore' does not name a type; did you mean 'UartCore'?
+ SsegCore::SsegCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+ UartCore
+../src/sseg_core.cpp:21:1: error: 'SsegCore' does not name a type; did you mean 'UartCore'?
+ SsegCore::~SsegCore() {
+ ^~~~~~~~
+ UartCore
+../src/sseg_core.cpp:25:6: error: 'SsegCore' has not been declared
+ void SsegCore::write_led() {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_led()':
+../src/sseg_core.cpp:32:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[3 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:36:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:36:20: note: suggested alternative: 'p'
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:39:13: error: 'base_addr' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+             ^
+../src/chu_io_rw.h:45:29: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                             ^~~~~~~~~
+../src/sseg_core.cpp:39:24: error: 'DATA_LOW_REG' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp:42:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[7 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:46:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:46:20: note: suggested alternative: 'p'
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:49:24: error: 'DATA_HIGH_REG' was not declared in this scope
+    io_write(base_addr, DATA_HIGH_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:52:6: error: 'SsegCore' has not been declared
+ void SsegCore::write_8ptn(uint8_t *ptn_array) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_8ptn(uint8_t*)':
+../src/sseg_core.cpp:56:7: error: 'ptn_buf' was not declared in this scope
+       ptn_buf[i] = *ptn_array;
+       ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:62:6: error: 'SsegCore' has not been declared
+ void SsegCore::write_1ptn(uint8_t pattern, int pos) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_1ptn(uint8_t, int)':
+../src/sseg_core.cpp:63:4: error: 'ptn_buf' was not declared in this scope
+    ptn_buf[pos] = pattern;
+    ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:69:6: error: 'SsegCore' has not been declared
+ void SsegCore::set_dp(uint8_t pt) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void set_dp(uint8_t)':
+../src/sseg_core.cpp:70:4: error: 'dp' was not declared in this scope
+    dp = ~pt;     // active low
+    ^~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:75:9: error: 'SsegCore' has not been declared
+ uint8_t SsegCore::h2s(int hex) {
+         ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+15:44:25 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:12:1: error: 'SsegCore' does not name a type; did you mean 'UartCore'?
+ SsegCore::SsegCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+ UartCore
+../src/sseg_core.cpp:21:1: error: 'SsegCore' does not name a type; did you mean 'UartCore'?
+ SsegCore::~SsegCore() {
+ ^~~~~~~~
+ UartCore
+../src/sseg_core.cpp:25:6: error: 'SsegCore' has not been declared
+ void SsegCore::write_led() {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_led()':
+../src/sseg_core.cpp:32:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[3 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:36:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:36:20: note: suggested alternative: 'p'
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:39:13: error: 'base_addr' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+             ^
+../src/chu_io_rw.h:45:29: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                             ^~~~~~~~~
+../src/sseg_core.cpp:39:24: error: 'DATA_LOW_REG' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp:42:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[7 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:46:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:46:20: note: suggested alternative: 'p'
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:116:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:49:24: error: 'DATA_HIGH_REG' was not declared in this scope
+    io_write(base_addr, DATA_HIGH_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:52:6: error: 'SsegCore' has not been declared
+ void SsegCore::write_8ptn(uint8_t *ptn_array) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_8ptn(uint8_t*)':
+../src/sseg_core.cpp:56:7: error: 'ptn_buf' was not declared in this scope
+       ptn_buf[i] = *ptn_array;
+       ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:62:6: error: 'SsegCore' has not been declared
+ void SsegCore::write_1ptn(uint8_t pattern, int pos) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_1ptn(uint8_t, int)':
+../src/sseg_core.cpp:63:4: error: 'ptn_buf' was not declared in this scope
+    ptn_buf[pos] = pattern;
+    ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:69:6: error: 'SsegCore' has not been declared
+ void SsegCore::set_dp(uint8_t pt) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void set_dp(uint8_t)':
+../src/sseg_core.cpp:70:4: error: 'dp' was not declared in this scope
+    dp = ~pt;     // active low
+    ^~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:75:9: error: 'SsegCore' has not been declared
+ uint8_t SsegCore::h2s(int hex) {
+         ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+15:46:02 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:12:32: error: 'data' has not been declared
+ void write_data_sseg(uint32_t, data){
+                                ^~~~
+make: *** [src/sseg_core.o] Error 1
+15:46:31 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11372	    284	   3144	  14800	   39d0	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+15:48:51 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11372	    284	   3144	  14800	   39d0	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+21:57:55 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11416	    284	   3140	  14840	   39f8	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+21:59:59 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp: In function 'void write_data_sseg(uint32_t)':
+../src/sseg_core.cpp:16:11: warning: unused variable 'sseg_data' [-Wunused-variable]
+  uint32_t sseg_data = io_write(base_addr, display_offset, data);
+           ^~~~~~~~~
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp: In function 'void write_refresh_rate(uint16_t)':
+../src/sseg_core.cpp:22:59: error: 'data' was not declared in this scope
+  uint32_t sseg_data = io_write(base_addr, refresh_offset, data);
+                                                           ^
+../src/chu_io_rw.h:45:57: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                                         ^~~~
+../src/sseg_core.cpp:22:11: warning: unused variable 'sseg_data' [-Wunused-variable]
+  uint32_t sseg_data = io_write(base_addr, refresh_offset, data);
+           ^~~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+22:00:24 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp: In function 'void write_data_sseg(uint32_t)':
+../src/sseg_core.cpp:16:11: warning: unused variable 'sseg_data' [-Wunused-variable]
+  uint32_t sseg_data = io_write(base_addr, display_offset, data);
+           ^~~~~~~~~
+../src/sseg_core.cpp: In function 'void write_refresh_rate(uint16_t)':
+../src/sseg_core.cpp:22:11: warning: unused variable 'sseg_data' [-Wunused-variable]
+  uint32_t sseg_data = io_write(base_addr, refresh_offset, refresh_rate);
+           ^~~~~~~~~
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11416	    284	   3140	  14840	   39f8	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+22:01:27 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11416	    284	   3140	  14840	   39f8	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+22:04:12 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'int main()':
+../src/main_vanilla_test.cpp:18:18: error: unable to find numeric literal operator 'operator""AbCd'
+  write_data_sseg(1234AbCd);
+                  ^~~~~~~~
+../src/main_vanilla_test.cpp:18:26: error: 'write_data_sseg' was not declared in this scope
+  write_data_sseg(1234AbCd);
+                          ^
+make: *** [src/main_vanilla_test.o] Error 1
+22:07:00 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'int main()':
+../src/main_vanilla_test.cpp:18:18: error: unable to find numeric literal operator 'operator""AbCd'
+  write_data_sseg(1234AbCd);
+                  ^~~~~~~~
+make: *** [src/main_vanilla_test.o] Error 1
+22:07:41 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3048	    276	   3124	   6448	   1930	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+22:08:31 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3136	    276	   3124	   6536	   1988	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+22:11:37 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3136	    276	   3124	   6536	   1988	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+22:12:20 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+22:13:04 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+22:13:49 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+22:16:12 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+22:16:35 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+22:18:16 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+22:32:47 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+22:34:14 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3136	    276	   3124	   6536	   1988	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+22:34:20 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+22:35:15 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'int main()':
+../src/main_vanilla_test.cpp:20:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+  write_data_sseg(0x123456789);
+                             ^
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3136	    276	   3124	   6536	   1988	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+23:46:24 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+make -C microblaze_I/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_I/libsrc/cpu_v2_7/src -s clean 
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s clean 
+make -C microblaze_I/libsrc/standalone_v6_7/src -s clean 
+rm -f microblaze_I/lib/libxil.a
+23:46:25 **** Clean-only build of configuration Debug for project SSEG_Switches_Display ****
+make clean 
+rm -rf  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/i2c_core.d ./src/main_vanilla_test.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/xadc_core.d  SSEG_Switches_Display.elf.size  SSEG_Switches_Display.elf
+' '
+23:46:25 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+23:46:37 **** Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'int main()':
+../src/main_vanilla_test.cpp:20:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+  write_data_sseg(0x123456789);
+                             ^
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3136	    276	   3124	   6536	   1988	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+23:47:15 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+23:48:06 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+23:48:16 **** Incremental Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+00:11:44 **** Clean-only build of configuration Debug for project SSEG_Switches_Display ****
+make clean 
+rm -rf  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/i2c_core.d ./src/main_vanilla_test.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/xadc_core.d  SSEG_Switches_Display.elf.size  SSEG_Switches_Display.elf
+' '
+00:11:45 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+make -C microblaze_I/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_I/libsrc/cpu_v2_7/src -s clean 
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s clean 
+make -C microblaze_I/libsrc/standalone_v6_7/src -s clean 
+rm -f microblaze_I/lib/libxil.a
+00:11:46 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+00:11:56 **** Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'int main()':
+../src/main_vanilla_test.cpp:20:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+  write_data_sseg(0x123456789);
+                             ^
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3136	    276	   3124	   6536	   1988	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+00:16:18 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3136	    276	   3124	   6536	   1988	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+00:30:21 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+make -C microblaze_I/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_I/libsrc/cpu_v2_7/src -s clean 
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s clean 
+make -C microblaze_I/libsrc/standalone_v6_7/src -s clean 
+rm -f microblaze_I/lib/libxil.a
+00:30:22 **** Clean-only build of configuration Debug for project SSEG_Switches_Display ****
+make clean 
+rm -rf  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/i2c_core.d ./src/main_vanilla_test.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/xadc_core.d  SSEG_Switches_Display.elf.size  SSEG_Switches_Display.elf
+' '
+00:30:22 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+00:30:33 **** Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3136	    276	   3124	   6536	   1988	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+00:35:55 **** Build of project standalone_bsp_1 ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_6/src"
+make -C microblaze_I/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_4/src"
+make -C microblaze_I/libsrc/iomodule_v2_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_3/src"
+make -C microblaze_I/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_6/src"
+make -C microblaze_I/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_4/src"
+make -C microblaze_I/libsrc/iomodule_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:169:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:215:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:262,
+                 from xiomodule.c:59:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:343:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:383:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:433:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:479:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:523:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:628:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:704:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+Command canceled
+00:36:39 **** Clean-only build of configuration Debug for project SSEG_Switches_Display ****
+make clean 
+rm -rf  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/i2c_core.d ./src/main_vanilla_test.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/xadc_core.d  SSEG_Switches_Display.elf.size  SSEG_Switches_Display.elf
+' '
+00:36:40 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+make -C microblaze_I/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_I/libsrc/cpu_v2_7/src -s clean 
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s clean 
+make -C microblaze_I/libsrc/standalone_v6_7/src -s clean 
+rm -f microblaze_I/lib/libxil.a
+00:36:41 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+00:36:51 **** Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3136	    276	   3124	   6536	   1988	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+00:37:36 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+00:37:55 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_6/src"
+make -C microblaze_I/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_4/src"
+make -C microblaze_I/libsrc/iomodule_v2_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_3/src"
+make -C microblaze_I/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_6/src"
+make -C microblaze_I/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_4/src"
+make -C microblaze_I/libsrc/iomodule_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:169:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:215:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:262,
+                 from xiomodule.c:59:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:343:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:383:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:433:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:479:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:523:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:628:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:704:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:152:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+xiomodule_uart.c: In function 'StubHandler':
+xiomodule_uart.c:255:31: warning: unused parameter 'CallBackRef' [-Wunused-parameter]
+ static void StubHandler(void *CallBackRef, unsigned int ByteCount)
+                               ^~~~~~~~~~~
+xiomodule_uart.c:255:57: warning: unused parameter 'ByteCount' [-Wunused-parameter]
+ static void StubHandler(void *CallBackRef, unsigned int ByteCount)
+                                                         ^~~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_3/src"
+make -C microblaze_I/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+'Finished building libraries'
+00:38:03 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: Nothing to be done for `all'.
+00:38:17 **** Clean-only build of configuration Debug for project SSEG_Switches_Display ****
+make clean 
+rm -rf  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/i2c_core.d ./src/main_vanilla_test.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/xadc_core.d  SSEG_Switches_Display.elf.size  SSEG_Switches_Display.elf
+' '
+00:38:18 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+make -C microblaze_I/libsrc/bram_v4_1/src -s clean 
+make -C microblaze_I/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_I/libsrc/iomodule_v2_4/src -s clean 
+make -C microblaze_I/libsrc/standalone_v6_3/src -s clean 
+rm -f microblaze_I/lib/libxil.a
+00:38:18 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_6/src"
+make -C microblaze_I/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_4/src"
+make -C microblaze_I/libsrc/iomodule_v2_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_3/src"
+make -C microblaze_I/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_6/src"
+make -C microblaze_I/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_4/src"
+make -C microblaze_I/libsrc/iomodule_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:169:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:215:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:262,
+                 from xiomodule.c:59:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:343:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:383:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:433:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:479:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:523:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:628:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:704:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:152:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+xiomodule_uart.c: In function 'StubHandler':
+xiomodule_uart.c:255:31: warning: unused parameter 'CallBackRef' [-Wunused-parameter]
+ static void StubHandler(void *CallBackRef, unsigned int ByteCount)
+                               ^~~~~~~~~~~
+xiomodule_uart.c:255:57: warning: unused parameter 'ByteCount' [-Wunused-parameter]
+ static void StubHandler(void *CallBackRef, unsigned int ByteCount)
+                                                         ^~~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_3/src"
+make -C microblaze_I/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+'Finished building libraries'
+00:38:26 **** Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3128	    276	   3124	   6528	   1980	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+00:47:35 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3128	    276	   3124	   6528	   1980	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+01:27:31 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'void sw_check(GpoCore*, GpiCore*)':
+../src/main_vanilla_test.cpp:18:7: warning: variable 's' set but not used [-Wunused-but-set-variable]
+   int s;
+       ^
+../src/main_vanilla_test.cpp: In function 'int main()':
+../src/main_vanilla_test.cpp:29:18: error: 's' was not declared in this scope
+  write_data_sseg(s);
+                  ^
+make: *** [src/main_vanilla_test.o] Error 1
+01:28:21 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'void sw_check(GpoCore*, GpiCore*)':
+../src/main_vanilla_test.cpp:18:7: warning: variable 's' set but not used [-Wunused-but-set-variable]
+   int s;
+       ^
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3128	    276	   3124	   6528	   1980	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+01:29:32 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'void sw_check(GpoCore*, GpiCore*)':
+../src/main_vanilla_test.cpp:18:7: warning: variable 's' set but not used [-Wunused-but-set-variable]
+   int s;
+       ^
+../src/main_vanilla_test.cpp: In function 'int main()':
+../src/main_vanilla_test.cpp:28:3: error: 'data' was not declared in this scope
+   data = sw_check(&sw);
+   ^~~~
+../src/main_vanilla_test.cpp:28:20: error: 'sw' was not declared in this scope
+   data = sw_check(&sw);
+                    ^~
+make: *** [src/main_vanilla_test.o] Error 1
+01:30:40 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'void sw_check(GpoCore*, GpiCore*)':
+../src/main_vanilla_test.cpp:18:7: warning: variable 's' set but not used [-Wunused-but-set-variable]
+   int s;
+       ^
+../src/main_vanilla_test.cpp: In function 'int main()':
+../src/main_vanilla_test.cpp:28:13: error: 'sw' was not declared in this scope
+   sw_check(&sw);
+             ^~
+../src/main_vanilla_test.cpp:31:18: error: 'data' was not declared in this scope
+  write_data_sseg(data);
+                  ^~~~
+make: *** [src/main_vanilla_test.o] Error 1
+01:32:36 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+../src/main_vanilla_test.cpp: In function 'void sw_check(GpoCore*, GpiCore*)':
+../src/main_vanilla_test.cpp:18:7: warning: variable 's' set but not used [-Wunused-but-set-variable]
+   int s;
+       ^
+../src/main_vanilla_test.cpp: In function 'int main()':
+../src/main_vanilla_test.cpp:31:28: error: 'sw' was not declared in this scope
+  write_data_sseg(sw_check(&sw));
+                            ^~
+make: *** [src/main_vanilla_test.o] Error 1
+01:33:44 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3128	    276	   3124	   6528	   1980	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+01:34:02 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_vanilla_test.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3128	    276	   3124	   6528	   1980	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+11:59:32 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+make: *** No rule to make target `../src/main_vanilla_test.cpp', needed by `src/main_vanilla_test.o'.  Stop.
+12:09:25 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+In file included from ../src/sseg_core.cpp:10:0:
+../src/sseg_core.h:10:0: error: unterminated #ifndef
+ #ifndef _SSEG_CORE_H_INCLUDED
+ 
+In file included from ../src/sseg_core.cpp:10:0:
+../src/sseg_core.h:41:2: error: 'uint31_t' does not name a type
+  uint31_t base_addr;
+  ^~~~~~~~
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp: In function 'void write_data_sseg(uint32_t)':
+../src/sseg_core.cpp:16:22: error: 'display_offset' was not declared in this scope
+  io_write(base_addr, display_offset, data);
+                      ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: In function 'void write_refresh_rate(uint16_t)':
+../src/sseg_core.cpp:22:22: error: 'refresh_offset' was not declared in this scope
+  io_write(base_addr, refresh_offset, refresh_rate);
+                      ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+make: *** [src/sseg_core.o] Error 1
+12:09:34 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+In file included from ../src/sseg_core.cpp:10:0:
+../src/sseg_core.h:10:0: error: unterminated #ifndef
+ #ifndef _SSEG_CORE_H_INCLUDED
+ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp: In function 'void write_data_sseg(uint32_t)':
+../src/sseg_core.cpp:16:22: error: 'display_offset' was not declared in this scope
+  io_write(base_addr, display_offset, data);
+                      ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: In function 'void write_refresh_rate(uint16_t)':
+../src/sseg_core.cpp:22:22: error: 'refresh_offset' was not declared in this scope
+  io_write(base_addr, refresh_offset, refresh_rate);
+                      ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+make: *** [src/sseg_core.o] Error 1
+12:09:54 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+In file included from ../src/sseg_core.cpp:10:0:
+../src/sseg_core.h:10:0: error: unterminated #ifndef
+ #ifndef _SSEG_CORE_H_INCLUDED
+ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp: In function 'void write_data_sseg(uint32_t)':
+../src/sseg_core.cpp:16:22: error: 'display_offset' was not declared in this scope
+  io_write(base_addr, display_offset, data);
+                      ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: In function 'void write_refresh_rate(uint16_t)':
+../src/sseg_core.cpp:22:22: error: 'refresh_offset' was not declared in this scope
+  io_write(base_addr, refresh_offset, refresh_rate);
+                      ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+make: *** [src/sseg_core.o] Error 1
+12:10:36 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp: In function 'void write_data_sseg(uint32_t)':
+../src/sseg_core.cpp:16:22: error: 'display_offset' was not declared in this scope
+  io_write(base_addr, display_offset, data);
+                      ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: In function 'void write_refresh_rate(uint16_t)':
+../src/sseg_core.cpp:22:22: error: 'refresh_offset' was not declared in this scope
+  io_write(base_addr, refresh_offset, refresh_rate);
+                      ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+make: *** [src/sseg_core.o] Error 1
+12:23:47 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:17:1: error: prototype for 'SSEGCore::SSEGCore()' does not match any in class 'SSEGCore'
+ SSEGCore::SSEGCore() {
+ ^~~~~~~~
+In file included from ../src/sseg_core.cpp:10:0:
+../src/sseg_core.h:19:7: error: candidates are: constexpr SSEGCore::SSEGCore(const SSEGCore&)
+ class SSEGCore {
+       ^~~~~~~~
+../src/sseg_core.cpp:13:1: error:                 SSEGCore::SSEGCore(uint32_t)
+ SSEGCore::SSEGCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+12:25:24 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:17:1: error: prototype for 'SSEGCore::SSEGCore()' does not match any in class 'SSEGCore'
+ SSEGCore::SSEGCore() {
+ ^~~~~~~~
+In file included from ../src/sseg_core.cpp:10:0:
+../src/sseg_core.h:19:7: error: candidates are: constexpr SSEGCore::SSEGCore(const SSEGCore&)
+ class SSEGCore {
+       ^~~~~~~~
+../src/sseg_core.cpp:13:1: error:                 SSEGCore::SSEGCore(uint32_t)
+ SSEGCore::SSEGCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+12:27:30 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:17:1: error: prototype for 'SSEGCore::SSEGCore()' does not match any in class 'SSEGCore'
+ SSEGCore::SSEGCore() {
+ ^~~~~~~~
+In file included from ../src/sseg_core.cpp:10:0:
+../src/sseg_core.h:19:7: error: candidates are: constexpr SSEGCore::SSEGCore(const SSEGCore&)
+ class SSEGCore {
+       ^~~~~~~~
+../src/sseg_core.cpp:13:1: error:                 SSEGCore::SSEGCore(uint32_t)
+ SSEGCore::SSEGCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+12:36:44 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2017.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [SSEG_Switches_Display.elf] Error 1
+12:41:56 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+'Finished building: ../src/main_sseg.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sseg.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2017.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [SSEG_Switches_Display.elf] Error 1
+13:07:19 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+../src/main_sseg.cpp: In function 'void sw_check(SSEGCore*, SSEGCore*, GpiCore*)':
+../src/main_sseg.cpp:18:35: error: no matching function for call to 'SSEGCore::write_refresh_rate()'
+  blink_rate -> write_refresh_rate();
+                                   ^
+In file included from ../src/main_sseg.cpp:9:0:
+../src/sseg_core.h:38:7: note: candidate: void SSEGCore::write_refresh_rate(uint16_t)
+  void write_refresh_rate(uint16_t refresh_rate); //Function to write refresh rate
+       ^~~~~~~~~~~~~~~~~~
+../src/sseg_core.h:38:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/main_sseg.o] Error 1
+13:09:43 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+../src/main_sseg.cpp: In function 'int main()':
+../src/main_sseg.cpp:28:25: error: 'write_refresh_rate' was not declared in this scope
+  write_refresh_rate(1000);
+                         ^
+make: *** [src/main_sseg.o] Error 1
+13:12:52 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+../src/main_sseg.cpp:28:22: error: 'SSEGCore refresh_rate' redeclared as different kind of symbol
+ SSEGCore refresh_rate(get_slot_addr(BRIDGE_BASE, S8_SSEG));
+                      ^
+../src/main_sseg.cpp:20:6: note: previous declaration 'void refresh_rate(SSEGCore*)'
+ void refresh_rate(SSEGCore *ref_rate) {
+      ^~~~~~~~~~~~
+../src/main_sseg.cpp: In function 'int main()':
+../src/main_sseg.cpp:33:16: error: 'ref_rate' was not declared in this scope
+  refresh_rate(&ref_rate);
+                ^~~~~~~~
+make: *** [src/main_sseg.o] Error 1
+13:13:38 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+'Finished building: ../src/main_sseg.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sseg.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3912	    284	   3140	   7336	   1ca8	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+13:37:53 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+../src/main_sseg.cpp: In function 'int main()':
+../src/main_sseg.cpp:33:21: error: cannot convert 'GpiCore*' to 'SSEGCore*' for argument '2' to 'void sw_check(SSEGCore*, SSEGCore*, GpiCore*)'
+  sw_check(&sseg, &sw);
+                     ^
+make: *** [src/main_sseg.o] Error 1
+13:38:06 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+../src/main_sseg.cpp: In function 'int main()':
+../src/main_sseg.cpp:33:32: error: cannot convert 'GpiCore*' to 'SSEGCore*' for argument '2' to 'void sw_check(SSEGCore*, SSEGCore*, GpiCore*)'
+  sw_check(&sseg, &sw, &ref_rate);
+                                ^
+make: *** [src/main_sseg.o] Error 1
+13:39:01 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+'Finished building: ../src/main_sseg.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sseg.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3856	    284	   3140	   7280	   1c70	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+13:56:30 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+'Finished building: ../src/main_sseg.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sseg.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3852	    284	   3144	   7280	   1c70	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+15:02:43 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+'Finished building: ../src/main_sseg.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sseg.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3828	    284	   3144	   7256	   1c58	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '

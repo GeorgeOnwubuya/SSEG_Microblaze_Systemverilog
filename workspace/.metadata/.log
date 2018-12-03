@@ -1,0 +1,361 @@
+!SESSION 2018-11-29 00:43:45.396 -----------------------------------------------
+eclipse.buildId=2017.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\user\SSEG_Peripheral\workspace\.metadata\.bak_0.log
+Created Time: 2018-11-29 00:45:55.908
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:45:55.914
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:45:56.968
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:45:56.980
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:45:56.993
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:45:57.001
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:45:57.027
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:45:57.036
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:45:57.774
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:45:57.783
+!MESSAGE XSCT Command: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:46:00.013
+!MESSAGE XSCT command with result: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:46:00.823
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:46:00.836
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:47:49.996
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:47:50.022
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:09.879
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:09.906
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:09.918
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:09.938
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:09.945
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:09.957
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:09.964
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:09.993
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:10.000
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:10.038
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:10.045
+!MESSAGE XSCT Command: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:12.275
+!MESSAGE XSCT command with result: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:13.083
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 00:48:13.102
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY org.eclipse.debug.ui 4 0 2018-11-29 11:50:48.837
+!MESSAGE Launch shortcut 'com.xilinx.sdk.launch.remote.shortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.jdt.launching.isContainer to type class org.eclipse.core.internal.resources.File
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:127)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:97)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:31)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:160)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:55)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:281)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:736)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:773)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:507)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:324)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:244)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:142)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2018-11-29 11:50:48.847
+!MESSAGE No property tester contributes a property org.eclipse.jdt.launching.isContainer to type class org.eclipse.core.internal.resources.File
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.380
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.488
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.495
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.520
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "6.3",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.535
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.547
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.554
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.565
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.572
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.582
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Result: [null, {"dlmb_cntlr": {"name": "bram",
+"ver": "4.1",
+},
+"ilmb_cntlr": {"name": "bram",
+"ver": "4.1",
+},
+"iomodule_0": {"name": "iomodule",
+"ver": "2.4",
+},
+"microblaze_I": {"name": "cpu",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.597
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 12:39:38.609
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/user/SSEG_Peripheral/workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:30:50.924
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:30:50.987
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.392
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.431
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.440
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.463
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.496
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.525
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.533
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.563
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.570
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.612
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:11.621
+!MESSAGE XSCT Command: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:13.854
+!MESSAGE XSCT command with result: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:14.662
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:31:14.684
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:39:59.169
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:39:59.195
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.167
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.202
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.214
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.239
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.246
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.259
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.264
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.291
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.300
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.332
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:18.340
+!MESSAGE XSCT Command: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:20.555
+!MESSAGE XSCT command with result: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:21.365
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:40:21.385
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:56:46.438
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:56:46.472
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.567
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.596
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.605
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.624
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.633
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.646
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.654
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.689
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.699
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.733
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:05.742
+!MESSAGE XSCT Command: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:07.961
+!MESSAGE XSCT command with result: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:08.769
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 13:57:08.791
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:02:49.643
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:02:49.667
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.611
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.637
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.645
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.662
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.669
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.682
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A4BA4EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.687
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.753
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.781
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.813
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BA4EA" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:08.820
+!MESSAGE XSCT Command: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:11.031
+!MESSAGE XSCT command with result: [fpga -file C:/Users/user/SSEG_Peripheral/workspace/sseg/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:11.838
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-29 15:03:11.864
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/user/SSEG_Peripheral/workspace/sseg/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext

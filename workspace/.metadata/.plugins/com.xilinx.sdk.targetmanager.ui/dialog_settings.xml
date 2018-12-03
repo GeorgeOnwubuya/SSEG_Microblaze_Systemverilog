@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Users\user\SSEG_Peripheral\workspace\SSEG_Switches_Display\Debug\SSEG_Switches_Display.elf" key="sseg-microblaze_I-initElf"/>
+	<item value="false" key="sseg-partial_bit"/>
+	<item value="Local" key="sseg-target"/>
+	<item value="mcs_top_vanilla.mmi" key="sseg-bmmFile"/>
+	<item value="sseg" key="programfpga.hwplatform"/>
+	<item value="Auto Detect" key="sseg-device"/>
+	<item value="mcs_top_vanilla.bit" key="sseg-bitFile"/>
+</section>

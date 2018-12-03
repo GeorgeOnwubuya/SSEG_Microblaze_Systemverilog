@@ -1,0 +1,21 @@
+15:02:43 **** Auto Build of configuration Debug for project SSEG_Switches_Display ****
+make all 
+'Building file: ../src/main_sseg.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sseg.o" -I../../standalone_bsp_0/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sseg.d" -MT"src/main_sseg.o" -o "src/main_sseg.o" "../src/main_sseg.cpp"
+'Finished building: ../src/main_sseg.cpp'
+' '
+'Building target: SSEG_Switches_Display.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SSEG_Switches_Display.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sseg.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SSEG_Switches_Display.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SSEG_Switches_Display.elf  |tee "SSEG_Switches_Display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3828	    284	   3144	   7256	   1c58	SSEG_Switches_Display.elf
+'Finished building: SSEG_Switches_Display.elf.size'
+' '
+
+15:02:44 Build Finished (took 1s.12ms)
+

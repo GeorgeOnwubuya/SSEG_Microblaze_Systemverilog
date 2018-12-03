@@ -1,0 +1,23 @@
+/*****************************************************************//**
+ * @file main_vanilla_test.cpp
+ *
+ * @brief Basic test of 4 basic i/o cores
+ *
+ * @author p chu
+ * @version v1.0: initial release
+ *********************************************************************/
+
+//#define _DEBUG
+#include "chu_init.h"
+#include "sseg_core.h"
+
+int main() {
+
+	//Set refresh rate
+	write_refresh_rate(1);
+
+	//Write data to seven segment
+	write_data_sseg(123456789);
+
+   }
+

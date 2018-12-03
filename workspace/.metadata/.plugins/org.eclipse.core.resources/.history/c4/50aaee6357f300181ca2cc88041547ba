@@ -1,0 +1,18 @@
+/*****************************************************************//**
+ * @file sseg_core.cpp
+ *
+ * @brief implementation of SsegCore class
+ *
+ * @author p chu
+ * @version v1.0: initial release
+ ********************************************************************/
+
+#include "sseg_core.h"
+
+void write_data_sseg(uint32_t data){
+
+
+
+
+
+}
